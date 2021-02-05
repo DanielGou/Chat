@@ -1,16 +1,18 @@
 const express = require('express')
 const socket = require('socket.io')
-const ejs = require('ejs')
+const path = require('path')
 const fs = require('fs')
 
 const app = express()
 
-app.set('view engine', 'ejs')
-
 app.use(express.static(__dirname + '/views'));
 
-app.get('/', (req,res)=>{
-    res.render('login/')
+app.get('/login', (req,res)=>{
+    res.sendFile("/login")
+})
+
+app.get('/chat', (req,res)=>{
+    res.sendFile("/chat")
 })
 
 app.listen(3000, ()=>{

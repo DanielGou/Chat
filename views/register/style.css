@@ -1,0 +1,16 @@
+html, body{
+    height: 85vh;
+}
+
+#nav{
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+}
+
+.conteiner{ 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
