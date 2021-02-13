@@ -11,24 +11,25 @@
     <nav id="nav">
         <h1>Register</h1>
     </nav>
-    <div class="conteiner">
+    <form id="reg-form" class="conteiner">
         <div>
-            <div class="input-group mb-3 mt-4">
-                <input type="text" name="rotate" placeholder="Email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            </div>
-            <input type="text" name="rotate" placeholder="UserName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <div>Username</div>
+            <input type="text" id="username" autocomplete="off" placeholder="UserName" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             <div class="input-group mb-3">
             </div>
+            <div>Password</div>
             <div class="input-group mb-3">
-                <input type="text" name='width' placeholder="Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="password" id="password1" placeholder="Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
+            <div>Repeate Password</div>
             <div class="input-group mb-3">
-                <input type="text" name='width' placeholder="Repeat Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="password" id="password2" placeholder="Repeat Password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="d-grid gap-2">
                 <button type="submit"  class="btn btn-success btn-lg mt-2">Register</button>
             </div>
         </div>
-    </div>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>

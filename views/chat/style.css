@@ -10,7 +10,7 @@ body{
     padding: 10px;
 }
 
-#messageBar{
+#message_form_name{
     position: fixed;
     bottom: 0;
 }
@@ -22,7 +22,7 @@ body{
     margin: 20px;
     max-width: 800px;
     width: 90%;
-    height: 480px;
+    height: 465px;
 }
 
 li{
@@ -51,5 +51,4 @@ li{
 
 #me{
     background-color: darkblue;
-    align-items: flex-end;
 }

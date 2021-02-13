@@ -12,31 +12,21 @@
         <nav id="navbar">
             <h1>FreeChat</h1>  
         </nav>
-
         <div class="d-flex justify-content-center">
             <div id="message">
-                <ul>
-                    <li>
-                        <img id="profileImg" src="https://www.hibox.co/web/wp-content/uploads/2016/06/hibox-slide-01.png" alt="">
-                        <div id="name">Igor</div>
-                        <div>Teste de texto</div>
-                    </li>
-                    <li id="me">
-                        <img id="profileImg" src="https://www.hibox.co/web/wp-content/uploads/2016/06/hibox-slide-01.png" alt="">
-                        <div id="name">Daniel</div>
-                        <div>Exemplo de testo</div>
-                    </li>
-                </ul>
+
             </div>
         </div>
-        <div id="messageBar" class="input-group d-flex justify-content-center">
+        <form name="message_form_name" id="message_form" class="input-group d-flex justify-content-center">
             <div class="col-auto">
-                <input type="text" class="form-control" id="inputPassword2" placeholder="Message">
+                <input type="text" class="form-control" name="msg" id="input_message" placeholder="Message">
             </div>
             <div class="col-auto">
                 <button type="submit" class="btn btn-primary mb-3">Submit</button>
             </div>
             </div>
-        </div>
+        </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

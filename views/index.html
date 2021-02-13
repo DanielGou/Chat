@@ -9,19 +9,22 @@
 </head>
 <body class="text-white bg-dark">
     <div class="conteiner">
-        <div> 
+        <form id="login"> 
             <h1 class="title text-center mt-2">FreeChat</h1>
-            <div class="input-group mb-3 mt-4">
-                <input type="number" name="rotate" placeholder="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            </div>
+            <div>Username</div>
             <div class="input-group mb-3">
-                <input type="number" name='width' placeholder="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <input type="text" placeholder="username" id="username" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div>Password</div>
+            <div class="input-group mb-3">
+                <input type="password" id="password" placeholder="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
             </div>
             <div class="d-grid gap-2">
-                <button type="submit"  class="btn btn-success btn-lg mt-2">open</button>
+                <button type="submit" class="btn btn-success btn-lg mt-2">login</button>
             </div>
-            <a>Sign up</a>
-        </div>
+            <a href="http://localhost:3000/register">Sign up</a>
+        </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
